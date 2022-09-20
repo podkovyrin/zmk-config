@@ -30,7 +30,7 @@
             bindings = <
  &trans  &trans  &trans  &trans    &kp LC(UP)   &trans                                  &trans    &trans    &kp UP     &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &kp LC(DOWN)  &kp RET                                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
- &trans  &trans  &trans  &trans       &kp F16   &trans  &trans   &mo 2  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
+ &trans  &trans  &trans  &trans       &kp F16   &trans  &trans   &mo 5  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
                          &trans        &trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
             >;
         };
@@ -41,7 +41,7 @@
             bindings = <
  &trans    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                     &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &trans
  &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                                  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
- &trans    &trans  &trans    &trans    &trans     &trans  &trans  &trans   &mo 1  &trans     &trans    &trans     &trans    &trans    &trans  &trans
+ &trans    &trans  &trans    &trans    &trans     &trans  &trans  &trans   &mo 4  &trans     &trans    &trans     &trans    &trans    &trans  &trans
                              &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans
             >;
         };
@@ -57,6 +57,30 @@
             >;
         };
     };
+
+    // duplicated nav and num layers to resolve conflict with conditional layer 3
+
+    // 4
+
+        navcopy {
+            bindings = <
+ &trans  &trans  &trans  &trans    &kp LC(UP)   &trans                                  &trans    &trans    &kp UP     &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &kp LC(DOWN)  &kp RET                                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+ &trans  &trans  &trans  &trans       &kp F16   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
+                         &trans        &trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
+            >;
+        };
+
+    // 5
+
+        numcopy {
+            bindings = <
+ &trans    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                     &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &trans
+ &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                                  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+ &trans    &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans    &trans    &trans  &trans
+                             &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans
+            >;
+        };
 };
 
 / {
