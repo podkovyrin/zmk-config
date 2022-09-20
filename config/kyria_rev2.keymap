@@ -56,7 +56,6 @@
                                                  &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans
             >;
         };
-    };
 
     // duplicated nav and num layers to resolve conflict with conditional layer 3
 
@@ -81,6 +80,7 @@
                              &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans
             >;
         };
+    };
 };
 
 / {
